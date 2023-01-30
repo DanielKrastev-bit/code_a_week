@@ -1,10 +1,14 @@
 print("Welcome to the best calculator ever!")
 print("Would you like to: ")
+print("0 mathematical equation")
 print("1 mathematical expressions")
 print("2 Input some numbers and the program will give you the give the biggest and the smallest")
 choice = int(input())
 
-if choice == 1:
+if choice == 0:
+    print(eval(input("Enter the equation.\n")))
+
+elif choice == 1:
     print("You chose mathematical expressions")
     print("Enter num1 and num2")
     numA = int(input())
